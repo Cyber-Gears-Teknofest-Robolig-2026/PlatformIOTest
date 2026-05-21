@@ -13,3 +13,13 @@ Deneyap Kart 1A v2 için PlatformIO framework'ünde oluşturulmuş bir proje.
 ```
 git clone https://github.com/Cyber-Gears-Teknofest-Robolig-2026/PlatformIOTest.git
 ```
+
+Bu komutlar ile mevcut proje için gerekli kütüphane ve modülleri bilgisayarınıza çekin.
+
+```
+pio pkg install
+```
+
+```
+pio run
+```
