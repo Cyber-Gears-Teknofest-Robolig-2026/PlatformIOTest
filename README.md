@@ -37,3 +37,7 @@ Mevcut proje kodlarını Deneyap Kart 1A v2 cihazına yükleyin:
 ```
 pio run -t upload
 ```
+
+### platformio.ini Dosyası:
+
+Bu dosya mevcut projemizin hangi işlemci kartınını, bu kartın özellikleri, projede kullanılan dışarıdan gelen kütüphaneler vb. herşeyi tutmaktadır.
