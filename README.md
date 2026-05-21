@@ -7,3 +7,9 @@ Deneyap Kart 1A v2 için PlatformIO framework'ünde oluşturulmuş bir proje.
 * Git
 * Python (pio kütüphanesi için)
 * VS Code veya Windsurf gibi bir editör
+
+### Kurulumlar:
+
+```
+git clone https://github.com/Cyber-Gears-Teknofest-Robolig-2026/PlatformIOTest.git
+```
