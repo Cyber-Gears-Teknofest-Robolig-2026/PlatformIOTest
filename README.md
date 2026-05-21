@@ -35,5 +35,5 @@ pio run
 Mevcut proje kodlarını Deneyap Kart 1A v2 cihazına yükleyin:
 
 ```
-pio run 
+pio run -t upload
 ```
