@@ -1,43 +1,30 @@
 #include <Arduino.h>
-#include <ArduinoJson.h>
+#include "config.h"
+#include "JsonStatus.h"
 
-#ifndef LED_BUILTIN
-#define LED_BUILTIN 2
-#endif
+JsonStatus statusReporter(DEVICE_NAME, PROJECT_NAME);
 
-const int ledPin = LED_BUILTIN;
-
-bool ledDurumu = false;
-int sayac = 0;
+bool ledState = false;
+int counter = 0;
 
 void setup() {
-  Serial.begin(115200);
+  Serial.begin(SERIAL_BAUD_RATE);
   delay(1000);
 
-  pinMode(ledPin, OUTPUT);
-  digitalWrite(ledPin, LOW);
+  pinMode(LED_PIN, OUTPUT);
+  digitalWrite(LED_PIN, LOW);
 
-  Serial.println();
-  Serial.println("Deneyap Kart + ArduinoJson + LED testi basladi");
+  Serial.println("Ana program basladi.");
+  statusReporter.begin();
 }
 
 void loop() {
-  ledDurumu = !ledDurumu;
+  ledState = !ledState;
+  digitalWrite(LED_PIN, ledState ? HIGH : LOW);
 
-  digitalWrite(ledPin, ledDurumu ? HIGH : LOW);
+  statusReporter.printStatus(ledState, counter, millis());
 
-  JsonDocument doc;
+  counter++;
 
-  doc["kart"] = "Deneyap Kart";
-  doc["kutuphane"] = "ArduinoJson";
-  doc["sayac"] = sayac++;
-  doc["led_pin"] = ledPin;
-  doc["led_durumu"] = ledDurumu ? "ACIK" : "KAPALI";
-  doc["millis"] = millis();
-
-  serializeJsonPretty(doc, Serial);
-  Serial.println();
-  Serial.println("----------------------");
-
-  delay(1000);
+  delay(LOOP_DELAY_MS);
 }

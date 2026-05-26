@@ -10,6 +10,7 @@
             "includePath": [
                 "C:/Users/Burak/Desktop/platformio_test/include",
                 "C:/Users/Burak/Desktop/platformio_test/src",
+                "C:/Users/Burak/Desktop/platformio_test/lib/JsonStatus",
                 "C:/Users/Burak/Desktop/platformio_test/.pio/libdeps/deneyapkart1Av2/ArduinoJson/src",
                 "C:/Users/Burak/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32s3/include/newlib/platform_include",
                 "C:/Users/Burak/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32s3/include/freertos/include",
@@ -250,6 +251,7 @@
                 "path": [
                     "C:/Users/Burak/Desktop/platformio_test/include",
                     "C:/Users/Burak/Desktop/platformio_test/src",
+                    "C:/Users/Burak/Desktop/platformio_test/lib/JsonStatus",
                     "C:/Users/Burak/Desktop/platformio_test/.pio/libdeps/deneyapkart1Av2/ArduinoJson/src",
                     "C:/Users/Burak/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32s3/include/newlib/platform_include",
                     "C:/Users/Burak/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32s3/include/freertos/include",
