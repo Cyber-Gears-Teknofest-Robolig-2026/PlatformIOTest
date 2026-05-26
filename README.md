@@ -52,7 +52,7 @@ Bu dosya mevcut projemizin hangi işlemci kartınını, bu kartın özellikleri,
 
 ### Proje klasörleri:
 
-* `include/`: Projedeki sabit tanımlar için oluşturabileceğimiz .h ve .hpp dosyalarını tutan klasör.
+* `include/`: Projedeki sabit tanımlar için oluşturabileceğimiz `.h` ve `.hpp` dosyalarını tutan klasör.
 * `lib/`: Projemizdeki kendi dahili kütüphanelerimizi koyacağımız klasör.
 * `src/`: Projemizin ana kodlarının bulunduğu klasör. Ana kodları her zaman `main.cpp` dosyasına yazıyoruz.
 * `test/`: Projemizin test kodlarının bulunduğu klasör. Burayı tam olarak çözemediğim için şimdilik boş bıraktım.
